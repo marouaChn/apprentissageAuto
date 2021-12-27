@@ -1,0 +1,25 @@
+EXERCICE 01 :
+
+1-L'objectif est de trouver des combinaisons de produits qui sont souvent achetés ensemble, que nous appelons des ensembles d'éléments fréquents. 
+Le terme technique pour le domaine est Frequent Itemset Mining.
+La première étape de l'algorithme consiste à calculer le support de chaque élément individuel 
+nous récupérons chaque élément de l'ensemble de données et calculons combien il apparaît
+aprés ça nous utiliserons un support minimum pour filtrer certains des produits qui ne sont pas fréquents
+L'étape suivante consiste à faire la même analyse, mais en utilisant maintenant des paires de produits au lieu de produits individuels
+nous utilisons toutes les combinaisons des éléments individuels sélectionnés précédemment
+et nous le filtrons à nouveau avec le support
+puis on passe à 3 éléments : ici il faut choisir 3 éléments ensemble s'ils sont tous présents dans le tableau de 2 éléments . par exemple pour compter (A,B,C)
+les paires (A,B)(B,C)(C,A) doivent être sélectionnées dans le tableau de 2 items et la mêmes choses pour la table de 4 items , 5 items ...
+enfin il faut générer des règles au format X->Y et calculer la confiance de chaque règle  puis choisir celle qui respecte le minimum de confiance .
+ 
+ 
+ 
+ 2-Avantages : 
+ -C'est l'algorithme le plus simple et le plus facile à comprendre parmi les algorithmes d'apprentissage de règles d'association.
+-Les règles résultantes sont intuitives et faciles à communiquer à un utilisateur final.
+-Il ne nécessite pas de données étiquetées car il est entièrement non supervisé ; par conséquent, vous pouvez l'utiliser dans de nombreuses situations différentes car les données non étiquetées sont souvent plus accessibles.
+-De nombreuses extensions ont été proposées pour différents cas d'utilisation basés sur cette implémentation - par exemple, il existe des algorithmes d'apprentissage d'association qui prennent en compte l'ordre des éléments, leur nombre et les horodatages associés
+-l'algorithme est exhaustif, il trouve donc toutes les règles avec le support et la confiance spécifiés.
+
+
+Desavantages : 
