@@ -28,3 +28,10 @@ Desavantages :
 L'inconvénient majeur de l'algorithme Apriori est le temps et l'espace. Il génère de nombreux itemsets inintéressants qui conduisentà générer
 diverses règles qui ne sont d'aucune utilité.
 Les deux facteurs pris en compte pour la génération des règles d'association sont le seuil de support minimum et le seuil de confiance minimum.
+
+
+
+3- Domaine d'utilisation : 
+Dans les supermarchés : En appliquant cette méthode de l'algorithme, les supermarchés peuvent améliorer leurs performances de vente et fonctionner efficacement.
+Dans le domaine de l'éducation : Extraction des règles d'association dans l'exploration de données des étudiants admis à travers les caractéristiques et les spécialités.
+Dans le domaine Médical : Par exemple Analyse de la base de données du patient.
