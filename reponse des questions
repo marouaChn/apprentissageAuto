@@ -17,9 +17,14 @@ enfin il faut générer des règles au format X->Y et calculer la confiance de c
  2-Avantages : 
  -C'est l'algorithme le plus simple et le plus facile à comprendre parmi les algorithmes d'apprentissage de règles d'association.
 -Les règles résultantes sont intuitives et faciles à communiquer à un utilisateur final.
--Il ne nécessite pas de données étiquetées car il est entièrement non supervisé ; par conséquent, vous pouvez l'utiliser dans de nombreuses situations différentes car les données non étiquetées sont souvent plus accessibles.
--De nombreuses extensions ont été proposées pour différents cas d'utilisation basés sur cette implémentation - par exemple, il existe des algorithmes d'apprentissage d'association qui prennent en compte l'ordre des éléments, leur nombre et les horodatages associés
+-Il ne nécessite pas de données étiquetées car il est entièrement non supervisé ; par conséquent,
+vous pouvez l'utiliser dans de nombreuses situations différentes car les données non étiquetées sont souvent plus accessibles.
+-De nombreuses extensions ont été proposées pour différents cas d'utilisation basés sur cette implémentation - par exemple,
+il existe des algorithmes d'apprentissage d'association qui prennent en compte l'ordre des éléments, leur nombre et les horodatages associés
 -l'algorithme est exhaustif, il trouve donc toutes les règles avec le support et la confiance spécifiés.
 
 
 Desavantages : 
+L'inconvénient majeur de l'algorithme Apriori est le temps et l'espace. Il génère de nombreux itemsets inintéressants qui conduisentà générer
+diverses règles qui ne sont d'aucune utilité.
+Les deux facteurs pris en compte pour la génération des règles d'association sont le seuil de support minimum et le seuil de confiance minimum.
